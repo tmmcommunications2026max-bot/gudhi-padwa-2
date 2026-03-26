@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celebrate Gudhi Padwa & Maharashtra Din</title>
+<meta property="og:title" content="Gudhi Padwa 2026 - Triveni Mitra Mandal">
+<meta property="og:description" content="Registration/Ticketing link and Buy Membership link">
+<meta property="og:image" content="https://tmmcommunications2026max-bot.github.io/gudhi-padwa/gudhi-padwa-thumbnail-2.jpg">
+<meta property="og:type" content="event">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #1a0e00;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    /* no padding on mobile so image goes edge-to-edge */
+    padding: clamp(0px, 3vw, 24px);
+    font-family: 'Cinzel', serif;
+  }
+
+  .flyer {
+    width: 100%;
+    max-width: 900px;
+    border-radius: clamp(0px, 1.5vw, 8px);
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Image fills full width at every size */
+  .flyer img.bg-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* ── FOOTER ── */
+  .footer-panel {
+    background: linear-gradient(180deg, #1A4A10 0%, #0E3008 60%, #0A2005 100%);
+    border-top: 3px solid #B8860B;
+    padding: clamp(14px, 3vw, 24px) clamp(12px, 4vw, 32px) clamp(16px, 3vw, 26px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(10px, 2vw, 16px);
+    animation: fadeInUp 0.6s ease 0.2s both;
+  }
+
+  /* Gold decorative rule */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 560px;
+  }
+  .divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #B8860B, transparent);
+  }
+  .divider-gem {
+    color: #FFD700;
+    font-size: clamp(10px, 2vw, 14px);
+    letter-spacing: 6px;
+  }
+
+  /* Buttons row — wraps gracefully on narrow screens */
+  .cta-row {
+    display: flex;
+    gap: clamp(10px, 2vw, 16px);
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    letter-spacing: clamp(1px, 0.3vw, 1.8px);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* fluid size: shrinks on small screens, caps on large */
+    font-size: clamp(10px, 2.2vw, 13px);
+    padding: clamp(10px, 1.8vw, 14px) clamp(16px, 3.5vw, 30px);
+    /* each button takes equal share but never overflows */
+    flex: 1 1 160px;
+    max-width: 260px;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  /* disable hover lift on touch devices */
+  @media (hover: none) { .btn:hover { transform: none; } }
+
+  .btn-register {
+    background: linear-gradient(135deg, #C03010 0%, #8A1A05 50%, #C03010 100%);
+    border: 2px solid #FF7040;
+    color: #FFF5E0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 18px rgba(160,30,10,0.55), inset 0 1px 0 rgba(255,255,255,0.15);
+  }
+  .btn-register:hover { box-shadow: 0 7px 26px rgba(160,30,10,0.8), inset 0 1px 0 rgba(255,255,255,0.15); }
+
+  .btn-member {
+    background: linear-gradient(135deg, #C8900A 0%, #8B6008 50%, #C8900A 100%);
+    border: 2px solid #FFD700;
+    color: #FFF5E0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 18px rgba(160,120,10,0.55), inset 0 1px 0 rgba(255,255,255,0.15);
+  }
+  .btn-member:hover { box-shadow: 0 7px 26px rgba(160,120,10,0.8), inset 0 1px 0 rgba(255,255,255,0.15); }
+
+  .member-note {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(8px, 1.8vw, 10.5px);
+    color: #C8D890;
+    letter-spacing: 0.8px;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Narrow phones: stack buttons full-width ── */
+  @media (max-width: 400px) {
+    .btn {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="flyer">
+
+  <img class="bg-image"
+       src="https://tmmcommunications2026max-bot.github.io/gudhi-padwa/gudhi-padwa-flyer.png"
+       alt="Gudhi Padwa & Maharashtra Din Celebration Flyer">
+
+  <div class="footer-panel">
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-gem">✦ ✦ ✦</div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="cta-row">
+      <a href="https://www.triveni-mandal.org/event-details/gudhi-padwa-2026"
+         class="btn btn-register" target="_blank" rel="noopener">
+        🎟️ Register Now
+      </a>
+      <a href="https://www.triveni-mandal.org/plans-pricing"
+         class="btn btn-member" target="_blank" rel="noopener">
+        ⭐ Become a Member
+      </a>
+    </div>
+
+    <div class="member-note">★ Members receive discounted event pricing — Join today!</div>
+
+  </div>
+</div>
+</body>
+</html>
